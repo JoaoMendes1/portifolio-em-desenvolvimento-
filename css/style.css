@@ -1,0 +1,9 @@
+nav a {
+    font-size: 16pt;
+    color: white;
+}
+
+nav a:hover {
+    color: turquoise;
+
+}
