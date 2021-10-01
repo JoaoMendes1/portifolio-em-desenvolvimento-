@@ -1,19 +1,37 @@
-		/* Configuração padrão da página
+		/* Layout
 		-------------------------------*/
 		body, html {
+			
 			margin: 0;
 			font: 16px "Lato", sans-serif;
 			color: #777;
 			height: 100%;
+			
 		}
+
+		#hom {
+			height: 100%;
+		}
+
 
 		.conteudo {
 			color: #777;
 			background-color: white;
 			text-align: justify;
 			padding: 50px 80px;
+			background: url(../imagens/gradiente.jpg) no-repeat;
 		}
 
+		h1 {
+			font-size: 50pt;
+			color:white;
+		}
+
+		h2 {
+			color: #21FFE1;
+		}
+
+		
 		h3 {
 			text-transform: uppercase;
 			color: #111;
@@ -22,6 +40,7 @@
 
 		p{
 			margin-bottom: 20px;
+			color:turquoise;
 		}
 
 		/* Efeito Parallax
@@ -68,3 +87,62 @@
 			letter-spacing: 5px;
 			text-transform: uppercase;
 		}
+
+/*
+Bara de navegação
+--------------------------*/
+nav.navbar-transparente {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 15px 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	font-size: 16pt;
+	color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #21FFE1;
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/*Animação*/
+
+.line {
+	border-right: 2px solid #21FFE1;
+	display:inline-flex;
+	text-align: center;
+	align-items:center;
+	white-space: nowrap;
+	overflow: hidden; /*Esconder o texto*/
+	
+}
+
+.typing-animation {
+	animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 2s normal both;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 17em;
+	}
+}
+
+
+@keyframes blinkCursor {
+	from {
+		border-right-color: #21FFE1;
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
